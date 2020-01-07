@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #76b852, #8dc26f);
+    background: -webkit-linear-gradient(to right, #76b852, #8dc26f);
+    font-family: sans-serif;
+}
