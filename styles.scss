@@ -1,0 +1,55 @@
+// =============== VARIABLES
+
+$columns: 12;
+
+// =============== GENERAL STYLES
+* {
+    box-sizing: border-box;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓ This has only layout purposes ↓↓↓↓↓↓↓↓↓↓ */
+div[class^="col-"] {
+    background: lightcoral;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ This has only layout purposes ↑↑↑↑↑↑↑↑↑↑ */
+
+// =============== LAYOUT STYLES
+@for $i from 1 through $columns{
+    .col-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+    }
+    .offset-#{$i} {
+        margin-left: 100% / $columns * $i;
+    }
+}
+
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+.container {
+    background: #f3f3f3;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// =============== ELEMENTS STYLES
+
+.hero-image {
+    background: lightseagreen;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
