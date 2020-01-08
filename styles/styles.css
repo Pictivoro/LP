@@ -7,3 +7,26 @@ body {
     background: -webkit-linear-gradient(to right, #76b852, #8dc26f);
     font-family: sans-serif;
 }
+
+.container {
+    background: lightblue;
+    width: calc(100% - 10rem);
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ========== This has test purposes ========== */
+
+div[class^="col-"] {
+    background: lightcoral;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1rem 0;
+}
