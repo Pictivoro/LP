@@ -1,6 +1,29 @@
 // =============== VARIABLES
 
 $columns: 12;
+$red: #AF0022;
+
+
+// =============== MIXINS
+
+@mixin oswald ($size, $color){
+    font-family: Oswald-Medium;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 2%;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin opensans ($size, $color, $align){
+    font-family: OpenSans;
+    font-size: $size;
+    color: $color;
+    letter-spacing: 0;
+    text-align: $align;
+}
 
 // =============== GENERAL STYLES
 * {
@@ -52,11 +75,12 @@ body {
     background: #ffffff;
 }
 
+.min-h{
+    min-height: 5em;
+}
+
 .nav-btn {
-    font-family: Oswald-Medium;
-    font-size: 14px;
-    color: #AF0022;
-    letter-spacing: 0;
+    @include oswald(14px, $red);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -76,14 +100,44 @@ body {
 }
 
 .hero-text {
-    text-align: center;
+    @include oswald(.8em, #FFFFFF);
+    transform: translate(-50%, -50%);
     position: absolute;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Oswald-Medium;
-    font-size: .8em;
-    color: #FFFFFF;
-    text-transform: uppercase;
 }
 
+.red-bg {
+    background: $red !important;
+    border: none !important;
+}
+
+.header {
+    @include oswald(36px, #FFFFFF);
+}
+
+.white-bg {
+    background: white !important;
+    border: none !important;
+}
+
+.red-header {
+    @include oswald(36px, $red);
+}
+
+.red-subtitle {
+    @include oswald(24px, $red);
+}
+
+.text {
+    @include opensans(18px, #47181F, center)
+}
+
+.small-text {
+    @include opensans(12px, #47181F, center)
+}
+
+.footer-text {
+    @include opensans(12px, white, center);
+    line-height: 3.5;
+}
