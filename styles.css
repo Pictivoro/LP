@@ -136,6 +136,7 @@ div[class^="col-"] {
 body {
   background: white;
   font-family: sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -153,6 +154,27 @@ body {
       flex-wrap: wrap;
 }
 
+.nav-bar {
+  position: fixed;
+  z-index: 999999;
+  background: #ffffff;
+}
+
+.nav-btn {
+  font-family: Oswald-Medium;
+  font-size: 14px;
+  color: #AF0022;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .hero-image {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/assets/hero-banner-bg.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/hero-banner-bg.jpg");
@@ -160,16 +182,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: white;
+  font-family: Oswald-Medium;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */
