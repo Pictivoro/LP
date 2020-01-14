@@ -174,7 +174,6 @@ body {
   font-size: 14px;
   color: #AF0022;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .nav-item {
@@ -224,6 +223,39 @@ body {
   padding-top: 2%;
   font-size: 36px;
   color: #FFFFFF;
+}
+
+label {
+  font-family: Oswald-Medium;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 2%;
+  font-size: 14px;
+  color: #e0e0e0;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  position: relative;
+  right: 16.3em;
+  top: -0.6em;
+}
+
+input:focus + label {
+  top: -33px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+input, textarea {
+  padding: 10px 10px 10px 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
 }
 
 .white-bg {
