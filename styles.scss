@@ -82,7 +82,6 @@ body {
 .nav-btn {
     @include oswald(14px, $red);
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .nav-item {
@@ -114,6 +113,31 @@ body {
 
 .header {
     @include oswald(36px, #FFFFFF);
+}
+
+label {
+    @include oswald(14px, #e0e0e0);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    position: relative;
+    right: 16.3em;
+    top: -0.6em;
+}
+
+input:focus + label {
+    top: -33px;
+    font-size: 14px;
+    color:#FFF;
+}
+
+input, textarea {
+    padding: 10px 10px 10px 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
 }
 
 .white-bg {
