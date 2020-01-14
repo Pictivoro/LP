@@ -25,6 +25,12 @@ $red: #AF0022;
     text-align: $align;
 }
 
+@mixin label-animation ($top) {
+    top: $top !important;
+    font-size: .9em;
+    color:#fff;
+}
+
 // =============== GENERAL STYLES
 * {
     box-sizing: border-box;
@@ -112,22 +118,54 @@ body {
 }
 
 .header {
-    @include oswald(36px, #FFFFFF);
+    @include oswald(2.3em, #FFFFFF);
+}
+
+#form-section{
+    height: 27em;
+}
+
+#form {
+    margin-left: 26%;
+}
+
+.short-input {
+    margin: 0 2% 3% 0;
+}
+
+.tall-input {
+    height: 80%;
+    margin: 2% 0;
 }
 
 label {
-    @include oswald(14px, #e0e0e0);
+    @include oswald(.9em, #CCCCCC);
     pointer-events: none;
     transition: 0.2s ease all;
     position: relative;
-    right: 16.3em;
-    top: -0.6em;
+    right: 19.4em;
+    top: -0.7em;
+}
+
+#mensaje-label {
+    right: 42.5em;
+    top: 0.7em;
 }
 
 input:focus + label {
-    top: -33px;
-    font-size: 14px;
-    color:#FFF;
+    @include label-animation(-22%)
+}
+
+textarea:focus + label {
+    @include label-animation(-15%)
+}
+
+input:valid + label {
+    color: rgba($color: #000000, $alpha: 0);
+}
+
+textarea:valid + label {
+    color: rgba($color: #000000, $alpha: 0);
 }
 
 input, textarea {
@@ -140,28 +178,38 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+.cta {
+    background: none;
+    cursor: pointer;
+    margin-left: 55%;
+}
+
 .white-bg {
     background: white !important;
     border: none !important;
 }
 
 .red-header {
-    @include oswald(36px, $red);
+    @include oswald(2.3em, $red);
 }
 
 .red-subtitle {
-    @include oswald(24px, $red);
+    @include oswald(1.5em, $red);
+}
+
+.white-subtitle {
+    @include oswald(1.5em, #FFFFFF);
 }
 
 .text {
-    @include opensans(18px, #47181F, center)
+    @include opensans(1.1em, #47181F, center)
 }
 
 .small-text {
-    @include opensans(12px, #47181F, center)
+    @include opensans(.8em, #47181F, center)
 }
 
 .footer-text {
-    @include opensans(12px, white, center);
+    @include opensans(.8em, white, center);
     line-height: 3.5;
 }
