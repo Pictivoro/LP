@@ -189,6 +189,20 @@ input:focus, textarea:focus {
     border: none !important;
 }
 
+#clients-section {
+    height: 27em;
+}
+
+.wide-item {
+    min-width: 10em;
+    margin-top: 2.5em;
+}
+
+.tall-item {
+    max-height: 45px;
+    margin-top: 2.5em;
+}
+
 .red-header {
     @include oswald(2.3em, $red);
 }
