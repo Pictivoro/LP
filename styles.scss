@@ -6,7 +6,7 @@ $red: #AF0022;
 
 // =============== MIXINS
 
-@mixin oswald ($size, $color){
+@mixin oswald ($size, $color) {
     font-family: Oswald-Medium;
     letter-spacing: 0;
     text-align: center;
@@ -17,7 +17,7 @@ $red: #AF0022;
     color: $color;
 }
 
-@mixin opensans ($size, $color, $align){
+@mixin opensans ($size, $color, $align) {
     font-family: OpenSans;
     font-size: $size;
     color: $color;
@@ -29,6 +29,13 @@ $red: #AF0022;
     top: $top !important;
     font-size: .9em;
     color:#fff;
+}
+
+@mixin logo-adj ($left, $top, $height, $width) {
+    margin-left: $left !important;
+    margin-top: $top !important;
+    max-height: $height !important;
+    min-width: $width !important;
 }
 
 // =============== GENERAL STYLES
@@ -189,8 +196,16 @@ input:focus, textarea:focus {
     border: none !important;
 }
 
+.center-p {
+    width: 30%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: relative;
+    margin-top: 2.5em;
+}
+
 #clients-section {
-    height: 27em;
+    height: 22em;
 }
 
 .wide-item {
@@ -201,6 +216,40 @@ input:focus, textarea:focus {
 .tall-item {
     max-height: 45px;
     margin-top: 2.5em;
+}
+
+#yoplait-logo {
+    @include logo-adj(7.5%, 1.8em, auto, auto);
+}
+
+#metro-logo {
+    max-height: 1.6em;
+}
+
+#chowbotics-logo {
+    margin-top: 2.7em;
+}
+
+#canal22-logo {
+    margin-top: 1.7em;
+    max-height: 55px;
+}
+
+#olson-logo {
+    max-height: 1.7em;
+}
+
+#thermion-logo {
+    margin-top: 3m;
+}
+
+#movistar-logo {
+    margin-top: 3em;
+}
+
+#unilever-logo {
+    margin-left: 5%;
+    max-height: 55px;
 }
 
 .red-header {
