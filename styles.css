@@ -305,8 +305,17 @@ input:focus, textarea:focus {
   border: none !important;
 }
 
+.center-p {
+  width: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  position: relative;
+  margin-top: 2.5em;
+}
+
 #clients-section {
-  height: 27em;
+  height: 22em;
 }
 
 .wide-item {
@@ -317,6 +326,43 @@ input:focus, textarea:focus {
 .tall-item {
   max-height: 45px;
   margin-top: 2.5em;
+}
+
+#yoplait-logo {
+  margin-left: 7.5% !important;
+  margin-top: 1.8em !important;
+  max-height: auto !important;
+  min-width: auto !important;
+}
+
+#metro-logo {
+  max-height: 1.6em;
+}
+
+#chowbotics-logo {
+  margin-top: 2.7em;
+}
+
+#canal22-logo {
+  margin-top: 1.7em;
+  max-height: 55px;
+}
+
+#olson-logo {
+  max-height: 1.7em;
+}
+
+#thermion-logo {
+  margin-top: 3m;
+}
+
+#movistar-logo {
+  margin-top: 3em;
+}
+
+#unilever-logo {
+  margin-left: 5%;
+  max-height: 55px;
 }
 
 .red-header {
