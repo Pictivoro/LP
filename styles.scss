@@ -82,6 +82,8 @@ body {
 
 // =============== ELEMENTS STYLES
 
+// =============== NAV BAR
+
 .nav-bar{
     position: fixed;
     z-index: 999999;
@@ -101,6 +103,8 @@ body {
     align-self: center;
 }
 
+// =============== Hero Banner
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/hero-banner-bg.jpg");
     height: 30rem;
@@ -119,6 +123,8 @@ body {
     left: 50%;
 }
 
+// =============== FORM SECTION
+
 .red-bg {
     background: $red !important;
     border: none !important;
@@ -128,8 +134,12 @@ body {
     @include oswald(2.3em, #FFFFFF);
 }
 
+.header-title {
+    padding-top: 3% !important;
+}
+
 #form-section{
-    height: 27em;
+    height: 29em;
 }
 
 #form {
@@ -159,6 +169,14 @@ label {
     top: 0.7em;
 }
 
+.cta {
+    background: none;
+    cursor: pointer;
+    margin-left: 55%;
+}
+
+/* ↓↓↓↓↓↓↓↓↓↓ :focus = triggered by click on input 
+:valid = prevents reverse of animation when text is already written ↓↓↓↓↓↓↓↓↓↓ */
 input:focus + label {
     @include label-animation(-22%)
 }
@@ -184,16 +202,19 @@ input, textarea {
 input:focus, textarea:focus {
     outline: none;
 }
+/* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
+:valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
 
-.cta {
-    background: none;
-    cursor: pointer;
-    margin-left: 55%;
-}
+
+// =============== APLICACIONES SECTION
 
 .white-bg {
     background: white !important;
     border: none !important;
+}
+
+#aplicaciones-section {
+    height: 40em;
 }
 
 .center-p {
@@ -204,8 +225,10 @@ input:focus, textarea:focus {
     margin-top: 2.5em;
 }
 
+// =============== WHO TRUST US
+
 #clients-section {
-    height: 22em;
+    height: 24em;
 }
 
 .wide-item {
@@ -252,6 +275,75 @@ input:focus, textarea:focus {
     max-height: 55px;
 }
 
+// =============== TECNICAS Y FORMATOS
+
+#first-line {
+    flex: 0 0 48%;
+}
+
+#second-img {
+    transform: translateY(-7%);
+}
+
+#second-line {
+    flex: 0 0 38%;
+    margin-left: 3.5%;
+}
+
+#third-p {
+    transform: translate(170%, -250%);
+}
+
+#fourth-p {
+    transform: translate(-165%, 140%);
+}
+
+#fourth-img {
+    transform: translate(0%, -15%);
+}
+
+#fourth-line {
+    transform: translate(0, -15%);
+}
+
+#fifth-line {
+    flex: 0 0 15%;
+}
+
+#fifth-p {
+    margin-top: 10%;
+}
+
+#sixth-img{
+    transform: translate(0, -20%);
+}
+
+#sixth-p {
+    transform: translate(-88%, 200%);
+}
+
+// =============== FOOTER
+
+#footer-section {
+    height: 30em;
+    padding-top: 2em;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.a-margin {
+    margin-left: 13%;
+}
+
+.social-logo {
+    max-width: 30px;
+    transform: translateY(10px);
+}
+
+// =============== TEXT STYLING
+
 .red-header {
     @include oswald(2.3em, $red);
 }
@@ -262,6 +354,18 @@ input:focus, textarea:focus {
 
 .white-subtitle {
     @include oswald(1.5em, #FFFFFF);
+}
+
+.text-padding {
+    padding: 0 40px;
+}
+
+.text-right {
+    @include opensans(1.1em, #47181F, right)
+}
+
+.text-left {
+    @include opensans(1.1em, #47181F, left)
 }
 
 .text {
@@ -275,4 +379,5 @@ input:focus, textarea:focus {
 .footer-text {
     @include opensans(.8em, white, center);
     line-height: 3.5;
+    text-decoration: none;
 }
