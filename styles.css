@@ -554,8 +554,84 @@ input:focus, textarea:focus {
   #mensaje-label {
     right: 39.3em;
   }
+  /* APLICACIONES SECTION */
+  #aplicaciones-section {
+    height: 37em;
+  }
   #workshops-container {
     margin-left: 9.5%;
+  }
+  .wide-item {
+    min-width: 8em;
+  }
+  /* TECNICAS Y FORMATOS */
+  #tecnicas-section {
+    height: 160em;
+  }
+  #second-img {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  #second-line {
+    -webkit-transform: translate(0px, -35%);
+            transform: translate(0px, -35%);
+  }
+  #third-line {
+    -webkit-transform: translate(0, -35%);
+            transform: translate(0, -35%);
+  }
+  #third-p {
+    -webkit-transform: translate(170%, -320%);
+            transform: translate(170%, -320%);
+  }
+  #fourth-img {
+    -webkit-transform: translate(0%, -25%);
+            transform: translate(0%, -25%);
+  }
+  #fourth-p {
+    -webkit-transform: translate(-165%, 120%);
+            transform: translate(-165%, 120%);
+  }
+  #fourth-line {
+    -webkit-transform: translate(0, -65%);
+            transform: translate(0, -65%);
+  }
+  #fifth-img {
+    -webkit-transform: translate(0, -15%);
+            transform: translate(0, -15%);
+  }
+  #fifth-line {
+    -webkit-transform: translate(0, -45%);
+            transform: translate(0, -45%);
+  }
+  #sixth-img {
+    -webkit-transform: translate(0, -32%);
+            transform: translate(0, -32%);
+  }
+  #sixth-p {
+    -webkit-transform: translate(-88%, 150%);
+            transform: translate(-88%, 150%);
+  }
+  .text-right {
+    font-family: OpenSans;
+    font-size: 0.8em;
+    color: #47181F;
+    letter-spacing: 0;
+    text-align: right;
+  }
+  .text-left {
+    font-family: OpenSans;
+    font-size: 0.8em;
+    color: #47181F;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .text {
+    font-family: OpenSans;
+    font-size: 0.8em;
+    color: #47181F;
+    letter-spacing: 0;
+    text-align: center;
   }
 }
 
