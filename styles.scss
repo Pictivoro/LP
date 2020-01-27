@@ -418,8 +418,81 @@ input:focus, textarea:focus {
         right: 39.3em;
     }
 
+    /* APLICACIONES SECTION */
+    
+    #aplicaciones-section {
+        height: 37em;
+    }
+
     #workshops-container {
         margin-left: 9.5%;
+    }
+
+    .wide-item {
+        min-width: 8em;
+    }
+    /* TECNICAS Y FORMATOS */
+
+    #tecnicas-section {
+        height: 160em;
+    }
+
+    #second-img {
+        transform: translateY(-20%);
+    }
+
+    #second-line {
+        transform: translate(0px, -35%);
+    }
+    
+    #third-line {
+        transform: translate(0, -35%);
+    }
+
+    #third-p {
+        transform: translate(170%, -320%);
+    }
+
+    #fourth-img {
+        transform: translate(0%, -25%);
+    }
+
+    #fourth-p {
+        transform: translate(-165%, 120%);
+    }
+
+    #fourth-line {
+        transform: translate(0, -65%);
+    }
+
+    #fifth-img {
+        transform: translate(0, -15%);
+    }
+
+    #fifth-line {
+        transform: translate(0, -45%);
+    }
+
+    #sixth-img{
+        transform: translate(0, -32%);
+    }
+
+    #sixth-p {
+        transform: translate(-88%, 150%);
+    }
+
+    // =============== TEXT STYLING
+
+    .text-right {
+        @include opensans(0.8em, #47181F, right)
+    }
+
+    .text-left {
+        @include opensans(0.8em, #47181F, left)
+    }
+
+    .text {
+        @include opensans(0.8em, #47181F, center)
     }
 }
 
