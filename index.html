@@ -20,7 +20,7 @@
       <ul style="list-style-type: none;" id="nav-list" class="col-9  offset-1  row">
         <li class="col-2  offset-1  nav-item"><a href="#" class="nav-btn">inicio</a></li class="col-2">
         <li class="col-2  nav-item"><a href="#Técnicas" class="nav-btn">técnicas y formatos</a></li>
-        <li class="col-4  offset-1  nav-item"><a href="#Aplicaciones" class="nav-btn">aplicaciones del livedrawing</a></li>
+        <li id="li-aplicaciones" class="col-4  offset-1  nav-item"><a href="#Aplicaciones" class="nav-btn">aplicaciones del livedrawing</a></li>
         <li class="col-2  nav-item"><a href="#form-section" class="nav-btn">contacto</a></li>
       </ul>
     </div>
@@ -38,9 +38,9 @@
       <form id="form" class="row" action="#">
         <input class="col-4  short-input" type="text" name="nombre" required>
         <label>Nombre</label>
-        <input class="col-4  short-input" type="text" id="" name="email" required>
+        <input class="col-4  short-input" type="text" name="email" required>
         <label for="email">E-mail</label>
-        <textarea class="col-9  tall-input" name="mensaje" required></textarea>
+        <textarea class="col-9  tall-input" id="mensaje-area" name="mensaje" required></textarea>
         <label id="mensaje-label" for="mensaje">¿Cómo te podemos ayudar?</label>
         <input class="white-subtitle  cta" type="submit" value="►       enviar">
       </form>
@@ -68,7 +68,7 @@
         <h2 class="red-subtitle">Workshops</h2>
         <p class="small-text">desmenuzar ideas complejas y convertirlas en una historia clara, memorable y emocionante.</p>
       </div>
-      <div class="col-2  offset-1  white-bg">
+      <div id="conferencias-container" class="col-2  offset-1  white-bg">
         <?xml version="1.0" encoding="UTF-8"?>
         <svg width="220px" height="220px" viewBox="0 0 220 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
         <title>Image</title>
@@ -85,7 +85,7 @@
         <h2 class="red-subtitle">Conferencias</h2 class="red-subtitle">
         <p class="small-text">desmenuzar ideas complejas y convertirlas en una historia clara, memorable y emocionante.</p class="small-text">
       </div>
-      <div class="col-2  offset-1  white-bg">
+      <div id="sketching-container" class="col-2  offset-1  white-bg">
         <?xml version="1.0" encoding="UTF-8"?>
         <svg width="220px" height="220px" viewBox="0 0 220 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
         <title>Image</title>
@@ -387,7 +387,7 @@
           </svg>
 
       <?xml version="1.0" encoding="UTF-8"?>
-        <svg class="col-1  offset-1  tall-item" width="136px" height="44px" viewBox="0 0 136 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Coca Cola -->
+        <svg id="coca-logo" class="col-1  offset-1  tall-item" width="136px" height="44px" viewBox="0 0 136 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Coca Cola -->
             <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
             <title>Coca Cola</title>
             <desc>Created with Sketch.</desc>
@@ -417,7 +417,7 @@
         </svg>
 
       <?xml version="1.0" encoding="UTF-8"?>
-        <svg class="col-1  offset-1  wide-item" width="176px" height="41px" viewBox="0 0 176 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Pepsico-->
+        <svg id="pepsi-logo" class="col-1  offset-1  wide-item" width="176px" height="41px" viewBox="0 0 176 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Pepsico-->
             <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
             <title>Pepsico</title>
             <desc>Created with Sketch.</desc>
@@ -532,7 +532,7 @@
   <div id="tecnicas-section" class="container  white-bg"> <!-- /Técnicas y Formatos -->
     <h1 class="red-header  header-title">técnicas y formatos</h1>
     <p class="text  center-p">desmenuzar ideas complejas y convertirlas en una historia clara, memorable y emocionante.</p>
-    <div class="row">
+    <div id="tecnicas-grid" class="row">
     <?xml version="1.0" encoding="UTF-8"?>
       <svg class="col-1  offset-2" width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
           <title>Image Copy 3</title>
@@ -561,7 +561,7 @@
               </g>
           </g>
       </svg>
-    <p class="col-3  offset-5  text-right  text-padding">Digital. <br> desmenuzar ideas complejas y convertirlas en una historia clara, memorable y emocionante.</p>
+    <p id="second-p" class="col-3  offset-5  text-right  text-padding">Digital. <br> desmenuzar ideas complejas y convertirlas en una historia clara, memorable y emocionante.</p>
       <?xml version="1.0" encoding="UTF-8"?>
         <svg id="second-img" class="col-2" width="220px" height="220px" viewBox="0 0 220 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
         <title>Image</title>
@@ -576,7 +576,7 @@
           </g>
         </svg>
     <?xml version="1.0" encoding="UTF-8"?>
-      <svg class="col-2  offset-3" width="220px" height="440px" viewBox="0 0 220 440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
+      <svg id="third-img" class="col-2  offset-3" width="220px" height="440px" viewBox="0 0 220 440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!-- Placeholder -->
           <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
           <title>Image Copy 5</title>
           <desc>Created with Sketch.</desc>
