@@ -180,10 +180,44 @@ svg {
   text-decoration: none;
 }
 
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 .nav-item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.two:hover ~ hr {
+  width: 10.5%;
+  margin-left: 26.5%;
+}
+
+.three:hover ~ hr {
+  width: 15%;
+  margin-left: 52%;
+}
+
+.four:hover ~ hr {
+  width: 5%;
+  margin-left: 84%;
+}
+
+hr {
+  height: .2rem;
+  width: 3%;
+  margin-left: 8.6%;
+  background: #AF0022;
+  border: none;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hero-image {
@@ -535,6 +569,37 @@ input:focus, textarea:focus {
   text-align: center;
   line-height: 3.5;
   text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    z-index: 999999;
+    -webkit-transform: translate(-100%, 115%);
+            transform: translate(-100%, 115%);
+  }
+  .nav-bar {
+    position: absolute !important;
+    width: 100%;
+    height: 100vh;
+    background: #AF0022;
+    left: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  nav.active {
+    left: 0;
+  }
+  #nav-list {
+    display: block;
+    text-align: center;
+  }
+  .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* ----------- iPad Pro ----------- */
