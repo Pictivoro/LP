@@ -728,6 +728,283 @@ input:focus, textarea:focus {
     }
 
     #tecnicas-section {
+        height: 155em;
+    }
+
+    #tecnicas-grid {
+        max-height: 132em;
+    }
+
+    #second-img {
+        transform: translateY(-45%);
+    }
+
+    #second-p {
+        transform: translate(0%, -32%);
+    }
+
+    #second-line {
+        transform: translate(0px, -100%);
+    }
+    
+    #third-line {
+        transform: translate(0, -185%);
+    }
+    
+    #third-img {
+        transform: translate(0, -28%);
+    }
+
+    #third-p {
+        transform: translate(170%, -270%);
+    }
+
+    #fourth-img {
+        transform: translate(0%, -126%);
+    }
+
+    #fourth-p {
+        transform: translate(-165%, -40%);
+    }
+
+    #fourth-line {
+        transform: translate(0, -360%);
+    }
+
+    #fifth-img {
+        transform: translate(0, -70%);
+    }
+
+    #fifth-p {
+        transform: translate(0%, -110%);
+    }
+
+    #fifth-line {
+        transform: translate(0, -165%);
+    }
+
+    #sixth-img{
+        transform: translate(0, -80%);
+    }
+
+    #sixth-p {
+        transform: translate(-88%, -50%);
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-width: 375px) 
+  and (max-height: 812px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    /* NAV BAR */
+    #nav-list {
+        margin-left: -2%;
+        flex: 0 0 83.33333%;
+    }
+    
+    /* FORM SECTION */
+    #form {
+        margin-left: 22%;
+    }
+    
+    label {
+        right: 18em;
+    }
+    
+    #mensaje-label {
+        right: 39.3em;
+    }
+
+    /* APLICACIONES SECTION */
+    
+    #aplicaciones-section {
+        height: 37em;
+    }
+
+    #workshops-container {
+        margin-left: 9.5%;
+    }
+
+    .wide-item {
+        min-width: 8em;
+    }
+    /* TECNICAS Y FORMATOS */
+
+    #tecnicas-section {
+        height: 160em;
+    }
+
+    #second-img {
+        transform: translateY(-20%);
+    }
+
+    #second-line {
+        transform: translate(0px, -35%);
+    }
+    
+    #third-line {
+        transform: translate(0, -35%);
+    }
+
+    #third-p {
+        transform: translate(170%, -320%);
+    }
+
+    #fourth-img {
+        transform: translate(0%, -25%);
+    }
+
+    #fourth-p {
+        transform: translate(-165%, 120%);
+    }
+
+    #fourth-line {
+        transform: translate(0, -65%);
+    }
+
+    #fifth-img {
+        transform: translate(0, -15%);
+    }
+
+    #fifth-line {
+        transform: translate(0, -45%);
+    }
+
+    #sixth-img{
+        transform: translate(0, -32%);
+    }
+
+    #sixth-p {
+        transform: translate(-88%, 150%);
+    }
+
+    // =============== TEXT STYLING
+
+    .text-right {
+        @include opensans(0.8em, #47181F, right)
+    }
+
+    .text-left {
+        @include opensans(0.8em, #47181F, left)
+    }
+
+    .text {
+        @include opensans(0.8em, #47181F, center)
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 375px) 
+  and (max-height: 812px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    /* FORM SECTION */
+    
+    #form {
+        margin-left: 29%;
+    }
+    
+    label {
+        right: 17.7em;
+    }
+    
+    #mensaje-label {
+        right: 39em;
+    }
+
+}
+
+/* ----------- iPhone 6/7/8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    .offset-1 {
+        margin-left: 6.33333%;
+    }
+    /* NAV BAR */
+    #nav-list {
+        margin-left: 5%;
+        flex: 0 0 75%;
+    }
+    
+    /* FORM SECTION */
+    #form {
+        margin-left: 19%;
+    }
+    
+    label {
+        right: 14.2em;
+        top: -0.4em;
+    }
+    
+    #mensaje-label {
+        right: -.7em;
+        top: -88%;
+    }
+
+    #mensaje-area {
+        flex: 0 0 76.5%;
+    }
+
+    /* ↓↓↓↓↓↓↓↓↓↓ :focus = triggered by click on input 
+    :valid = prevents reverse of animation when text is already written ↓↓↓↓↓↓↓↓↓↓ */
+    input:focus + label {
+        @include label-animation(-17%)
+    }
+    
+    textarea:focus + label {
+        @include label-animation(-103%)
+    }
+    /* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
+    :valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
+
+
+    /* APLICACIONES SECTION */
+    
+    #aplicaciones-section {
+        height: 37em;
+    }
+
+    #workshops-container {
+        margin-left: 6.5%;
+        flex: 0 0 25%;
+    }
+
+    #conferencias-container {
+        flex: 0 0 25%;
+    }
+
+    #sketching-container {
+        flex: 0 0 25%;
+    }
+
+    /* WHO TRUST US */
+
+    #clients-section {
+        height: 21em;
+    }
+    .wide-item {
+        min-width: 8em;
+    }
+    
+    /* TECNICAS Y FORMATOS */
+    #first-line {
+        transform: translate(0, -50%);
+    }
+
+    #tecnicas-section {
         height: 132em;
     }
 
@@ -789,5 +1066,132 @@ input:focus, textarea:focus {
 
     #sixth-p {
         transform: translate(-88%, -150%);
+    }
+
+    // =============== TEXT STYLING
+
+    .text-right {
+        @include opensans(0.8em, #47181F, right)
+    }
+
+    .text-left {
+        @include opensans(0.8em, #47181F, left)
+    }
+
+    .text {
+        @include opensans(0.8em, #47181F, center)
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    
+    
+    /* NAV BAR */
+    #nav-list {
+        margin-left: 6.8%;
+        flex: 0 0 75%;
+    }
+
+    #li-aplicaciones {
+        margin-left: 1%;
+    }
+    
+    /* FORM SECTION */
+    #form {
+        margin-left: 22%;
+    }
+    
+    label {
+        right: 17.7em;
+    }
+    
+    #mensaje-label {
+        right: 39em;
+    }
+
+    /* APLICACIONES SECTION */
+
+    #aplicaciones-section {
+        height: 42em;
+    }
+
+    /* WHO TRUST US */
+
+    svg[id$="-logo"] {
+        margin-left: 6%;
+    }
+
+    /* TECNICAS Y FORMATOS */
+    #first-line {
+        transform: translate(0, -50%);
+    }
+
+    #tecnicas-section {
+        height: 155em;
+    }
+
+    #tecnicas-grid {
+        max-height: 132em;
+    }
+
+    #second-img {
+        transform: translateY(-45%);
+    }
+
+    #second-p {
+        transform: translate(0%, -32%);
+    }
+
+    #second-line {
+        transform: translate(0px, -100%);
+    }
+    
+    #third-line {
+        transform: translate(0, -185%);
+    }
+    
+    #third-img {
+        transform: translate(0, -28%);
+    }
+
+    #third-p {
+        transform: translate(170%, -270%);
+    }
+
+    #fourth-img {
+        transform: translate(0%, -126%);
+    }
+
+    #fourth-p {
+        transform: translate(-165%, -40%);
+    }
+
+    #fourth-line {
+        transform: translate(0, -360%);
+    }
+
+    #fifth-img {
+        transform: translate(0, -70%);
+    }
+
+    #fifth-p {
+        transform: translate(0%, -110%);
+    }
+
+    #fifth-line {
+        transform: translate(0, -165%);
+    }
+
+    #sixth-img{
+        transform: translate(0, -80%);
+    }
+
+    #sixth-p {
+        transform: translate(-88%, -50%);
     }
 }
