@@ -83,10 +83,6 @@ body {
     flex-wrap: wrap;
 }
 
-svg {
-    width: 100%;
-}
-
 // =============== ELEMENTS STYLES
 
 // =============== NAV BAR
@@ -459,6 +455,23 @@ input:focus, textarea:focus {
     .nav-item {
         border-bottom: 1px solid rgba(0, 0, 0, .2);
     }
+
+    h1 {
+        font-size: 1.7em !important;
+    }
+
+    svg[id$="-img"] {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    svg[id$="-line"] {
+        display: none;
+    }
+
+    p[id$="-text"] {
+        margin: 0;
+    }
 }
 
 
@@ -830,7 +843,7 @@ input:focus, textarea:focus {
     }
 
     #third-p {
-        transform: translate(170%, -270%);
+        transform: translate(100%, -270%);
     }
 
     #fourth-img {
@@ -838,7 +851,7 @@ input:focus, textarea:focus {
     }
 
     #fourth-p {
-        transform: translate(-165%, -40%);
+        transform: translate(100%, -320%);
     }
 
     #fourth-line {
@@ -887,62 +900,164 @@ input:focus, textarea:focus {
     }
     
     label {
-        right: 18em;
+        right: 15em;
+        top: 0;
     }
     
     #mensaje-label {
         right: 39.3em;
     }
 
+    #mensaje-label {
+        right: -0.5em;
+        top: -12.5em;
+    }
+
+    .hero-image {
+        height: 70vh;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .header-title {
+        padding-top: 7% !important;
+    }
+
+    .short-input {
+        flex: 0 0 75%;
+        margin: 0 2% 5% 0;
+    }
+
+    .cta {
+        margin-left: 25%;
+    }
+    
+    .red-header {
+        width: 55%;
+        margin-left: 23%;
+    }
+
+    .center-p {
+        width: 60%;
+        margin-top: 3.5em;
+    }
+
+    /* ↓↓↓↓↓↓↓↓↓↓ :focus = triggered by click on input 
+:valid = prevents reverse of animation when text is already written ↓↓↓↓↓↓↓↓↓↓ */
+    input:focus + label {
+        @include label-animation(-22%)
+    }
+
+    textarea:focus + label {
+        @include label-animation(-15%)
+    }
+
+    input:valid + label {
+        color: rgba($color: #000000, $alpha: 0);
+    }
+
+    textarea:valid + label {
+        color: rgba($color: #000000, $alpha: 0);
+    }
+
+    input, textarea {
+        padding: 10px 10px 10px 5px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+/* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
+:valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
+
+
     /* APLICACIONES SECTION */
     
     #aplicaciones-section {
-        height: 37em;
-    }
-
-    #workshops-container {
-        margin-left: 9.5%;
+        height: 82em;
     }
 
     .wide-item {
         min-width: 8em;
     }
+
+    #workshops-container, #conferencias-container, #sketching-container {
+        flex: 0 0 83.33333%;
+        margin-left: 9%;
+    }
+
+    /* WHO TRUST US */
+
+    #clients-section {
+        height: 35em;
+    }
+    
+    svg[id$="-logo"] {
+        flex: 0 0 37.33333%;
+    }
+
     /* TECNICAS Y FORMATOS */
+
+    .text-right {
+        text-align: center;
+        margin: 0;
+        min-width: 75%;
+        transform: translate(20%, 400%)
+    }
+    
+    .text-left {
+        text-align: center;
+        margin: 0;
+        min-width: 75%;
+        transform: translate(15%, 25%) !important;
+    }
 
     #tecnicas-section {
         height: 160em;
     }
 
     #second-img {
-        transform: translateY(-20%);
+        transform: translateY(-10%);
     }
 
     #second-line {
         transform: translate(0px, -35%);
     }
     
+    #third-img {
+        transform: translateY(25%);
+    }
+
     #third-line {
         transform: translate(0, -35%);
     }
 
     #third-p {
-        transform: translate(170%, -320%);
+        transform: translate(15%, 175%) !important;   
     }
 
     #fourth-img {
-        transform: translate(0%, -25%);
+        transform: translate(0%, 25%);
     }
 
     #fourth-p {
-        transform: translate(-165%, 120%);
+        transform: translate(20%, 440%);
     }
 
     #fourth-line {
         transform: translate(0, -65%);
     }
 
+    #fifth-p {
+        transform: translate(15%, -50%) !important;
+    }
+    
     #fifth-img {
-        transform: translate(0, -15%);
+        transform: translate(0, 15%);
     }
 
     #fifth-line {
@@ -954,7 +1069,7 @@ input:focus, textarea:focus {
     }
 
     #sixth-p {
-        transform: translate(-88%, 150%);
+        transform: translate(20%, 550%);
     }
 
     // =============== TEXT STYLING
@@ -969,6 +1084,14 @@ input:focus, textarea:focus {
 
     .text {
         @include opensans(0.8em, #47181F, center)
+    }
+
+    // FOOTER
+
+    .footer-text {
+        font-size: 0.7em;
+        text-align: left;
+        line-height: 2.5;
     }
 }
 
