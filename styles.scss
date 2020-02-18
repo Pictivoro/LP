@@ -179,7 +179,7 @@ hr {
 }
 
 #form {
-    margin-left: 26%;
+    margin-left: 27%;
 }
 
 .short-input {
@@ -895,6 +895,7 @@ input:focus, textarea:focus {
     }
     
     /* FORM SECTION */
+
     #form {
         margin-left: 22%;
     }
@@ -952,24 +953,6 @@ input:focus, textarea:focus {
 
     textarea:focus + label {
         @include label-animation(-15%)
-    }
-
-    input:valid + label {
-        color: rgba($color: #000000, $alpha: 0);
-    }
-
-    textarea:valid + label {
-        color: rgba($color: #000000, $alpha: 0);
-    }
-
-    input, textarea {
-        padding: 10px 10px 10px 5px;
-        border: none;
-        border-radius: 3px;
-    }
-
-    input:focus, textarea:focus {
-        outline: none;
     }
 /* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
 :valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
@@ -1086,13 +1069,53 @@ input:focus, textarea:focus {
         @include opensans(0.8em, #47181F, center)
     }
 
-    // FOOTER
+    /* FOOTER */
+
+    #footer-section {
+        height: 27em;
+    }
 
     .footer-text {
         font-size: 0.7em;
         text-align: left;
         line-height: 2.5;
     }
+
+    #contacto-footer {
+        flex: 0 0 43.66667%;
+        margin-left: 7.33333%;
+    }
+
+    #servicios-footer {
+        flex: 0 0 37.66667%;
+    }
+
+    #servicios-title, #contacto-title {
+        text-align: left;
+    }
+
+    #siguenos-title {
+        display: none;
+    }
+
+    #siguenos-footer {
+        display: flex;
+        height: fit-content;
+        margin-top: -20%;
+    }
+
+    #siguenos-a {
+        display: none;
+    }
+
+    .a-margin {
+        margin-left: 0;
+    }
+
+    .social-logo {
+        margin: 25%;
+    }
+
 }
 
 /* Landscape */
@@ -1102,167 +1125,122 @@ input:focus, textarea:focus {
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
     
+    .hero-image {
+        height: 24rem;
+    }
+
+    h1 {
+        font-size: 1.7em !important;
+    }
+
     /* FORM SECTION */
-    
-    #form {
-        margin-left: 29%;
-    }
-    
-    label {
-        right: 17.7em;
-    }
-    
-    #mensaje-label {
-        right: 39em;
-    }
 
-}
-
-/* ----------- iPhone 6/7/8 ----------- */
-
-/* Portrait */
-@media only screen 
-  and (min-width: 768px) 
-  and (max-height: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-    
-    .offset-1 {
-        margin-left: 6.33333%;
-    }
-    /* NAV BAR */
-    #nav-list {
-        margin-left: 5%;
-        flex: 0 0 75%;
-    }
-    
-    /* FORM SECTION */
     #form {
         margin-left: 19%;
     }
-    
+
     label {
-        right: 14.2em;
-        top: -0.4em;
+        right: 15.3em;
+        top: -.5em;
     }
-    
+ 
     #mensaje-label {
-        right: -.7em;
-        top: -88%;
+        right: -0.5em;
+        top: -13em;
     }
 
-    #mensaje-area {
-        flex: 0 0 76.5%;
+    .cta {
+        margin-left: 53%;
     }
 
     /* ↓↓↓↓↓↓↓↓↓↓ :focus = triggered by click on input 
-    :valid = prevents reverse of animation when text is already written ↓↓↓↓↓↓↓↓↓↓ */
+:valid = prevents reverse of animation when text is already written ↓↓↓↓↓↓↓↓↓↓ */
     input:focus + label {
-        @include label-animation(-17%)
+        @include label-animation(-16%)
     }
-    
+
     textarea:focus + label {
-        @include label-animation(-103%)
+        @include label-animation(-104%)
     }
-    /* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
-    :valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
-
-
-    /* APLICACIONES SECTION */
+/* ↑↑↑↑↑↑↑↑↑↑ :focus = triggered by click on input 
+:valid = prevents reverse of animation when text is already written ↑↑↑↑↑↑↑↑↑↑ */
     
-    #aplicaciones-section {
-        height: 37em;
+    /* APLICACIONES SECTION */
+
+    #conferencias-container, #sketching-container {
+        margin-left: 4.33333%;
     }
 
     #workshops-container {
-        margin-left: 6.5%;
-        flex: 0 0 25%;
+        margin-left: 5%;
     }
-
-    #conferencias-container {
-        flex: 0 0 25%;
-    }
-
-    #sketching-container {
-        flex: 0 0 25%;
-    }
-
+    
     /* WHO TRUST US */
 
     #clients-section {
         height: 21em;
     }
-    .wide-item {
-        min-width: 8em;
-    }
     
-    /* TECNICAS Y FORMATOS */
-    #first-line {
-        transform: translate(0, -50%);
+    svg[id$="-logo"] {
+        flex: 0 0 10.33333%;
+        min-width: 7em;
     }
+
+    /* TECNICAS SECTION */
 
     #tecnicas-section {
-        height: 132em;
+        height: 172em;
     }
 
-    #tecnicas-grid {
-        max-height: 132em;
-    }
-
-    #second-img {
-        transform: translateY(-58%);
-    }
+    #first-p {
+        transform: translate(224%, -109%);
+    } 
 
     #second-p {
-        transform: translate(0%, -32%);
+        transform: translate(-224%, 64%);
     }
 
-    #second-line {
-        transform: translate(0px, -145%);
-    }
-    
-    #third-line {
-        transform: translate(0, -290%);
-    }
-    
     #third-img {
-        transform: translate(0, -38%);
+        transform: translate(0, -8%);
     }
 
     #third-p {
-        transform: translate(170%, -380%);
-    }
-
-    #fourth-img {
-        transform: translate(0%, -142%);
+        transform: translate(256%, -256%);
     }
 
     #fourth-p {
-        transform: translate(-165%, -100%);
+    transform: translate(-140%, 56%);
     }
 
-    #fourth-line {
-        transform: translate(0, -430%);
+    #fourth-img {
+        transform: translate(32%, -64%);
+        flex: 0 0 71.66667%;
     }
 
     #fifth-img {
-        transform: translate(0, -91%);
+        transform: translate(-8%, -20%);
     }
 
     #fifth-p {
-        transform: translate(0%, -110%);
+        transform: translate(300%, -356%);
     }
 
-    #fifth-line {
-        transform: translate(0, -235%);
-    }
-
-    #sixth-img{
-        transform: translate(0, -103%);
+    #sixth-img {
+        transform: translate(16.3%, -36%);
+        flex: 0 0 86%;
     }
 
     #sixth-p {
-        transform: translate(-88%, -150%);
+        transform: translate(50%, 340%);
+        flex: 0 0 50%;
+    }
+
+    #footer-section {
+        height: 33em;
+    }
+
+    div[id$="-footer"] {
+        flex: 0 0 22.33333%;
     }
 
     // =============== TEXT STYLING
@@ -1278,6 +1256,17 @@ input:focus, textarea:focus {
     .text {
         @include opensans(0.8em, #47181F, center)
     }
+
+}
+
+/* ----------- iPhone 6/7/8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-width: 768px) 
+  and (max-height: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
 }
 
 /* Landscape */
@@ -1286,109 +1275,4 @@ input:focus, textarea:focus {
   and (max-height: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
-    
-    
-    /* NAV BAR */
-    #nav-list {
-        margin-left: 6.8%;
-        flex: 0 0 75%;
-    }
-
-    #li-aplicaciones {
-        margin-left: 1%;
-    }
-    
-    /* FORM SECTION */
-    #form {
-        margin-left: 22%;
-    }
-    
-    label {
-        right: 17.7em;
-    }
-    
-    #mensaje-label {
-        right: 39em;
-    }
-
-    /* APLICACIONES SECTION */
-
-    #aplicaciones-section {
-        height: 42em;
-    }
-
-    /* WHO TRUST US */
-
-    svg[id$="-logo"] {
-        margin-left: 6%;
-    }
-
-    /* TECNICAS Y FORMATOS */
-    #first-line {
-        transform: translate(0, -50%);
-    }
-
-    #tecnicas-section {
-        height: 155em;
-    }
-
-    #tecnicas-grid {
-        max-height: 132em;
-    }
-
-    #second-img {
-        transform: translateY(-45%);
-    }
-
-    #second-p {
-        transform: translate(0%, -32%);
-    }
-
-    #second-line {
-        transform: translate(0px, -100%);
-    }
-    
-    #third-line {
-        transform: translate(0, -185%);
-    }
-    
-    #third-img {
-        transform: translate(0, -28%);
-    }
-
-    #third-p {
-        transform: translate(170%, -270%);
-    }
-
-    #fourth-img {
-        transform: translate(0%, -126%);
-    }
-
-    #fourth-p {
-        transform: translate(-165%, -40%);
-    }
-
-    #fourth-line {
-        transform: translate(0, -360%);
-    }
-
-    #fifth-img {
-        transform: translate(0, -70%);
-    }
-
-    #fifth-p {
-        transform: translate(0%, -110%);
-    }
-
-    #fifth-line {
-        transform: translate(0, -165%);
-    }
-
-    #sixth-img{
-        transform: translate(0, -80%);
-    }
-
-    #sixth-p {
-        transform: translate(-88%, -50%);
-    }
 }
